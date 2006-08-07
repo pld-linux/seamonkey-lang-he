@@ -1,7 +1,7 @@
 %define	_lang	he
 %define	_reg	IL
 %define _lare	%{_lang}-%{_reg}
-Summary:	Hebraic resources for SeaMonkey
+Summary:	Hebrew resources for SeaMonkey
 Summary(pl):	Hebrajskie pliki jêzykowe dla SeaMonkeya
 Name:		seamonkey-lang-%{_lang}
 Version:	1.0.1
@@ -23,7 +23,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define	_chromedir	%{_datadir}/seamonkey/chrome
 
 %description
-Hebraic resources for SeaMonkey.
+Hebrew resources for SeaMonkey.
 
 %description -l pl
 Hebrajskie pliki jêzykowe dla SeaMonkeya.
