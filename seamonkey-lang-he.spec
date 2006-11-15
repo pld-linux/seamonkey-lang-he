@@ -4,12 +4,12 @@
 Summary:	Hebrew resources for SeaMonkey
 Summary(pl):	Hebrajskie pliki jêzykowe dla SeaMonkeya
 Name:		seamonkey-lang-%{_lang}
-Version:	1.0.1
+Version:	1.0.6
 Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/seamonkey/releases/%{version}/contrib-localized/seamonkey-%{version}.%{_lare}.langpack.xpi
-# Source0-md5:	148845cbd46a51b7741dd975c4f6f2a4
+# Source0-md5:	46a10510674414a12b63b6cbae507f22
 Source1:	gen-installed-chrome.sh
 URL:		http://www.mozilla.org/projects/seamonkey/
 BuildRequires:	unzip
