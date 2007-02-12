@@ -2,7 +2,7 @@
 %define	_reg	IL
 %define _lare	%{_lang}-%{_reg}
 Summary:	Hebrew resources for SeaMonkey
-Summary(pl):	Hebrajskie pliki jêzykowe dla SeaMonkeya
+Summary(pl.UTF-8):   Hebrajskie pliki jÄ™zykowe dla SeaMonkeya
 Name:		seamonkey-lang-%{_lang}
 Version:	1.0.6
 Release:	1
@@ -25,8 +25,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Hebrew resources for SeaMonkey.
 
-%description -l pl
-Hebrajskie pliki jêzykowe dla SeaMonkeya.
+%description -l pl.UTF-8
+Hebrajskie pliki jÄ™zykowe dla SeaMonkeya.
 
 %prep
 %setup -q -c
