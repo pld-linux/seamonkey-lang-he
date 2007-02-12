@@ -2,7 +2,7 @@
 %define	_reg	IL
 %define _lare	%{_lang}-%{_reg}
 Summary:	Hebrew resources for SeaMonkey
-Summary(pl.UTF-8):   Hebrajskie pliki językowe dla SeaMonkeya
+Summary(pl.UTF-8):	Hebrajskie pliki językowe dla SeaMonkeya
 Name:		seamonkey-lang-%{_lang}
 Version:	1.0.6
 Release:	1
