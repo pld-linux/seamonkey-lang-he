@@ -5,7 +5,7 @@ Summary:	Hebrew resources for SeaMonkey
 Summary(pl.UTF-8):	Hebrajskie pliki językowe dla SeaMonkeya
 Name:		seamonkey-lang-%{_lang}
 Version:	1.1.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://ftp.mozilla.org/pub/mozilla.org/seamonkey/releases/%{version}/contrib-localized/seamonkey-%{version}.%{_lare}.langpack.xpi
@@ -31,16 +31,16 @@ Hebrajskie pliki językowe dla SeaMonkeya.
 %prep
 %setup -q -c
 install %{SOURCE1} .
-./gen-installed-chrome.sh locale bin/chrome/{%{_reg},%{_lare},%{_lang}-unix}.jar \
+./gen-installed-chrome.sh locale chrome/{%{_reg},%{_lare},%{_lang}-unix}.jar \
 	> lang-%{_lang}-installed-chrome.txt
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_chromedir}
 
-install bin/chrome/{%{_reg},%{_lare},%{_lang}-unix}.jar $RPM_BUILD_ROOT%{_chromedir}
+install chrome/{%{_reg},%{_lare},%{_lang}-unix}.jar $RPM_BUILD_ROOT%{_chromedir}
 install lang-%{_lang}-installed-chrome.txt $RPM_BUILD_ROOT%{_chromedir}
-cp -r bin/{searchplugins,defaults} $RPM_BUILD_ROOT%{_datadir}/seamonkey
+cp -r {searchplugins,defaults} $RPM_BUILD_ROOT%{_datadir}/seamonkey
 
 %clean
 rm -rf $RPM_BUILD_ROOT
